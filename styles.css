@@ -6,6 +6,7 @@
 
 body {
     height: 100vh;
+    display: flex;
     background: #060AB2;
 }
 
@@ -29,6 +30,10 @@ body {
 .memory-card:active {
     transform: scale(0.97);
     transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
 }
 
 .front-face,
